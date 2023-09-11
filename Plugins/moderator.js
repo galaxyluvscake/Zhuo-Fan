@@ -391,7 +391,7 @@ module.exports = {
         }
 
         const intinput = parseInt(text);
-        if (intinput < 0 || intinput > 19) {
+        if (intinput < 0 || intinput > 21) {
           await doReact("❌");
           return Atlas.sendMessage(
             m.from,
