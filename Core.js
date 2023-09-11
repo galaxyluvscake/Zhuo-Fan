@@ -212,8 +212,7 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
     if (body == prefix) {
       await doReact("🥰");
       return m.reply(
-        { Image: { url: botImage1 }, caption: `Yo my nigga, I am ${botName}.\n\n🧩 Uptime: *${uptime()}*\n\n⚙ Mode: *${botWorkMode}*\n\nType *${prefix}help* to see the list of my commands.`},
-        { quoted: m }
+        `Yo my nigga, I am ${botName}.\n\n🧩 Uptime: *${uptime()}*\n\n⚙ Mode: *${botWorkMode}*\n\nType *${prefix}help* to see the list of my commands.`
       );
       /*
       return m.reply(

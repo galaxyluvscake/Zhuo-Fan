@@ -136,14 +136,16 @@ module.exports = {
         case "pluginlist":
           await doReact("🧩");
           textssf = `*『    Installable Plugins List    』*\n\n
-*🎀 Name:* audioEdit.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX001/b818960e024c541e155f948db34a2da2/raw/f6771fbd4c615a64eafb92d53e7627276f20167a/audio-edit.js\n\n
-*🎀 Name:* text-to-speech.js\n🔖 *Number of commads:* 7\n*🧩 Url:* https://gist.githubusercontent.com/FantoX001/109e3f04e70ca2edeb8d47072bbd0499/raw/84de4d44994fcb8b9f315a2be41eac062378df01/text-to-speech.js\n\n
-*🎀 Name:* image-edit.js\n🔖 *Number of commads:* 4\n*🧩 Url:* https://gist.githubusercontent.com/FantoX001/b48fd5040b2cd83e5e331c0d2c974871/raw/909c5a6a32cfcb2dbb965f1ee2a5e3025802de5b/image-edit.js\n\n     
-*🎀 Name:* logo-maker.js\n🔖 *Number of commads:* 40\n*🧩 Url:* https://gist.githubusercontent.com/FantoX001/b8e4a9782623c6197c10f68aa798a548/raw/7466871764434cf4c2ee30b15aac871e5db48a74/logo-maker.js\n\n 
-*🎀 Name:* fun.js\n🔖 *Number of commads:* 17\n*🧩 Url:* https://gist.githubusercontent.com/FantoX001/e4df3eb3cc06baaccce3130a29262b30/raw/4c9b280fe527891f4d935b36b1c06e7f2fda9f6f/fun.js\n\n
-*🎀 Name:* chat-GPT.js\n🔖 *Number of commands:* 2\n*🧩 Url:* https://gist.githubusercontent.com/FantoX001/ec3e327c9711b1d3059cc26b8b7945be/raw/9396030969cbf0f24ad1c318a9035540ce4577b2/chat-GPT.js\n\n
-*🎀 Name:* tiktokdl.js\n🔖 *Number of commands:* 4\n*🧩 Url:* https://gist.githubusercontent.com/FantoX001/481b039ef502a56339374b29b7491695/raw/854ed660349cc3fd45de89ce137721c674a03ec3/tiktokdl.js\n\n
-*🎀 Name:* nsfw-image.js\n🔖 *Number of commands:* 1\n*🧩 Url:* https://gist.githubusercontent.com/FantoX001/804c106f1f2fb1ae46e9bd63f854069d/raw/a93191b83c0cca44abb7e0e26b55caf2892f0bb4/nsfw-image.js\n\n
+*🎀 Name:* economy.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/63bcf78d6da0bce7d9f18343e3143fbc/raw/224c92477109f7082f698890fe510874da597d5c/economy.js\n\n
+*🎀 Name:* rpg.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/151e440d351549c896042155c223c59c/raw/2fbced16ebd14300f917248801c707d9733118ad/rpg.js\n\n
+*🎀 Name:* code-Runner.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/8c2b76e4ed2d96eb370379a56f0cf330/raw/d3322fab57c52afd83cf83fc3f5afa493dc4e88f/code-Runner.js\n\n
+*🎀 Name:* audio-edit.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/4e097be1a35b9c00bf0bc9f6635e335b/raw/cc57a7780dd80612b62ded960af3d70d19662956/audio-edit.js\n\n
+*🎀 Name:* image-Edit.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/9f6cb696d645a49a98abba00c570cfe9/raw/23154ec10c2ee08558a8aca44389f0a983aa4dea/image-Edit.js\n\n
+*🎀 Name:* text-to-speech.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/998a3b2937080af7c30a2639544fa24c/raw/afc9ba94cbaea95e971e3aea3f80e492249c75d7/text-to-speech.js\n\n
+*🎀 Name:* logo-maker.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/67035f308b809aaabad8faa001fe473d/raw/72c2b3c100471375755817119c7ab391985bd7f3/logo-maker.js\n\n
+*🎀 Name:* chat-GPT.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/04507d2d7411996622513759ea05775d/raw/7d27fc2bb2f6d8a45d3e929e3904c66895d811ad/chat-GPT.js\n\n
+*🎀 Name:* fun.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/e02ed98798e5cc73a0778d8bc04f0f03/raw/77293b2b35d875ce0c91357d879fe5d0881423b9/fun.js\n\n
+*🎀 Name:* tiktokdl.js\n🔖 *Number of commads:* 8\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/2de67bc72021805417cbd317385ea71a/raw/f70879fc861dadd440f4a4a7dbb01cdae44b3c56/tiktokdl.js\n\n
 
 ⚜️ To install a plugin type *install* _plugin-url_ !\n\nExample: *${prefix}install* https://gist.githubusercontent.com/FantoX001/xyz...\n\n⚜️ To uninstall a plugin type *uninstall* _plugin-name_ !\n\nExample: *${prefix}uninstall* audioEdit.js\n`;
           await Atlas.sendMessage(m.from, { image: {url: botImage1},caption: textssf }, { quoted: m });
