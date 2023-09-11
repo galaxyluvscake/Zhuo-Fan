@@ -23,7 +23,7 @@ module.exports = async (Atlas, anu) => {
           }\n`
         );
         Atlastext = `
-Hello @${WAuserName.split("@")[0]} Senpai,
+Yo my nigga @${WAuserName.split("@")[0]},
 
 Welcome to *${metadata.subject}*.
 
@@ -49,7 +49,7 @@ ${desc}
           }\n`
         );
         Atlastext = `
-  @${WAuserName.split("@")[0]} Senpai left the group.
+  My nigga @${WAuserName.split("@")[0]} left the group.
   `;
         if (WELstatus) {
           await Atlas.sendMessage(anu.id, {

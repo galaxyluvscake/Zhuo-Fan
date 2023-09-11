@@ -7,7 +7,7 @@ class Collections extends Map {
 	setOptions(name, options = {}) {
 		if (!name) return name;
 		if (!Object.keys(options).length) return options;
-		if (!this.has(name)) return `'${name}' does not matched any commands`;
+		if (!this.has(name)) return `'${name}' does not match any commands`;
 		let command = this.get(name);
 		this.set(name, {
 			...command,
@@ -21,7 +21,7 @@ class Collections extends Map {
 	
 	rename(name, setName) {
 		if (!name || !setName) return setName || name;
-		if (!this.has(name)) return `'${name}' does not matched any commands`;
+		if (!this.has(name)) return `'${name}' does not match any commands`;
 		if (this.has(setName)) return `'${setName}'  exists`;
 		let command = this.get(name);
 		command.name = setName;
@@ -33,7 +33,7 @@ class Collections extends Map {
 	modified(name, options = {}) {
 		if (!name) return name;
 		if (!Object.keys(options).length) return options;
-		if (!this.has(name)) return `'${name}' does not matched any commands`;
+		if (!this.has(name)) return `'${name}' does not match any commands`;
 		let command = this.get(name);
 		this.set(name, {
 			...command,

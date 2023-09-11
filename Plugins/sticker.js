@@ -65,8 +65,8 @@ module.exports = {
           await doReact("🔖");
           let mediaMess = await quoted.download();
           let stickerMess = new Sticker(mediaMess, {
-            pack: packname,
-            author: pushName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -87,8 +87,8 @@ module.exports = {
             );
           }
           let stickerMess = new Sticker(mediaMess, {
-            pack: packname,
-            author: pushName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -113,11 +113,11 @@ module.exports = {
         }
         await doReact("🀄️");
         if (!args.join(" ")) {
-          var packName = pushName;
-          var authorName = pushName;
-        } else if (args.join(" ").includes(",")) {
-          var packName = args.join(" ").split(",")[0];
-          var authorName = args.join(" ").split(",")[1];
+          var packName = "meme";
+          var authorName = "nigger";
+        } else if (args.join(" ").includes("|")) {
+          var packName = args.join(" ").split("|")[0];
+          var authorName = args.join(" ").split("|")[1];
         } else {
           var packName = args.join(" ");
           var authorName = args.join(" ");
@@ -125,8 +125,8 @@ module.exports = {
         if (/webp/.test(mime)) {
           let mediaMess = await quoted.download();
           let stickerMess = new Sticker(mediaMess, {
-            pack: packName,
-            author: authorName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -138,7 +138,7 @@ module.exports = {
         } else {
           await doReact("❌");
           m.reply(
-            `Please mention a *Sticker* and type *${prefix}steal <packname , authorname>* to create sticker with your name.`
+            `Please mention a *Sticker* and type *${prefix}steal <packname | authorname>* to create sticker with your name.`
           );
         }
 
@@ -150,8 +150,8 @@ module.exports = {
           await doReact("🃏");
           let mediaMess = await quoted.download();
           let stickerMess = new Sticker(mediaMess, {
-            pack: packname,
-            author: pushName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.CROPPED,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -168,8 +168,8 @@ module.exports = {
             return m.reply("Please send video less than 15 seconds.");
           }
           let stickerMess = new Sticker(mediaMess, {
-            pack: packname,
-            author: pushName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.CROPPED,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -201,8 +201,8 @@ module.exports = {
           meme = `https://api.memegen.link/images/custom/-/${text}.png?background=${mem}`;
 
           let stickerMess = new Sticker(meme, {
-            pack: packname,
-            author: pushName,
+            pack: "meme",
+            author: "nigger",
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -230,7 +230,7 @@ module.exports = {
         if (!text && !m.quoted) {
           await doReact("❔");
           return m.reply(
-            `Please provide a text (Type or mention a message) !\n\nExample: ${prefix}q Atlas MD is OP`
+            `Please provide a text (Type or mention a message) !\n\nExample: ${prefix}q Zhuo Fan is OP`
           );
         }
 
@@ -310,7 +310,7 @@ module.exports = {
             fs.unlinkSync("quote.png");
           })
           .catch((err) => {
-            m.reply("An error occurd!");
+            m.reply("An error occured!");
           });
 
         break;

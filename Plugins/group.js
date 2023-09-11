@@ -488,6 +488,7 @@ module.exports = {
         break;
 
       case "remove":
+      case "shiet":
         if (!isAdmin) {
           await doReact("❌");
           return m.reply(`*You* must be *Admin* in order to use this Command!`);
@@ -550,6 +551,7 @@ module.exports = {
         break;
 
       case "setppgc":
+      case "setgcpp":
         if (!isAdmin) {
           await doReact("❌");
           return m.reply(`*You* must be *Admin* in order to use this Command!`);

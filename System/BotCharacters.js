@@ -51,6 +51,8 @@
 17 --- Yor
 18 --- Shinbou
 19 --- Eiko
+20 --- Yang Kai
+21 --- Zhuo Fan
 
 Image Source: https://wall.alphacoders.com/
 Image Source: https://wallpapercave.com/
@@ -288,4 +290,26 @@ global.charID19 = {
   botImage4 : "https://images6.alphacoders.com/126/1260043.png",
   botImage5 : "https://images6.alphacoders.com/124/1247977.jpg",
   botImage6 : "https://images2.alphacoders.com/125/1251795.jpg",
+}
+
+global.charID20 = {
+  botName : "Yang Kai",
+  botVideo : "https://graph.org/file/6cbe505770bbab0c5cce4.mp4",
+  botImage1 : "https://graph.org/file/59d13d9286aab22182986.jpg",
+  botImage2 : "https://graph.org/file/6fd8dafa333bb905aeabe.jpg",
+  botImage3 : "https://graph.org/file/94162c69d52fe2467f7fb.jpg",
+  botImage4 : "https://graph.org/file/ffb68dd6516ab752a25b4.jpg",
+  botImage5 : "https://graph.org/file/e5cc9a400ebf8d02c167d.jpg",
+  botImage6 : "https://graph.org/file/e81a8e8af0a0ad48f4d9f.jpg",
+}
+
+global.charID21 = {
+  botName : "Zhuo Fan",
+  botVideo : "https://graph.org/file/1d081b1db53b60cd7af8b.mp4",
+  botImage1 : "https://graph.org/file/7e48356e61d40dc1e46ed.jpg",
+  botImage2 : "https://graph.org/file/8deb381a93268c6fbe4b1.jpg",
+  botImage3 : "https://graph.org/file/588ec99c764bee1bac79c.jpg",
+  botImage4 : "https://graph.org/file/04fdd152a0b27d5e83c23.jpg",
+  botImage5 : "https://graph.org/file/362aa85841a9fdbea7ccd.jpg",
+  botImage6 : "https://graph.org/file/3d44b3619041610a0d576.jpg",
 }

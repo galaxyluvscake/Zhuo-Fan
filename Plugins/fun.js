@@ -143,7 +143,7 @@ module.exports = {
           "What is the biggest lie you ever told your parents",
           "Who is your celebrity crush",
           "Whats the strangest dream you have ever had",
-          "do you play pubg, if you then send ur id number",
+          "Do you play pubg? If you do, send ur id number",
         ];
         const truthData = truth[Math.floor(Math.random() * truth.length)];
 

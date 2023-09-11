@@ -64,6 +64,14 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
     const inputCMD = body.slice(1).trim().split(/ +/).shift().toLowerCase();
     const groupName = m.isGroup ? metadata.subject : "";
     var _0x8a6e=["\x39\x31\x38\x31\x30\x31\x31\x38\x37\x38\x33\x35\x40\x73\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x6E\x65\x74","\x39\x32\x33\x30\x34\x35\x32\x30\x34\x34\x31\x34\x40\x73\x2E\x77\x68\x61\x74\x73\x61\x70\x70\x2E\x6E\x65\x74","\x69\x6E\x63\x6C\x75\x64\x65\x73"];function isintegrated(){const _0xdb4ex2=[_0x8a6e[0],_0x8a6e[1]];return _0xdb4ex2[_0x8a6e[2]](messSender)}
+    const pad = (s) => (s < 10 ? "0" : "") + s;
+    const formatTime = (seconds) => {
+      const hours = Math.floor(seconds / (60 * 60));
+      const minutes = Math.floor((seconds % (60 * 60)) / 60);
+      const secs = Math.floor(seconds % 60);
+      return (time = `${pad(hours)}:${pad(minutes)}:${pad(secs)}`);
+    };
+    const uptime = () => formatTime(process.uptime());
     const {
       checkBan,
       checkMod,
@@ -202,10 +210,16 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
     }
 
     if (body == prefix) {
-      await doReact("❌");
+      await doReact("🥰");
+      return m.reply(
+        { Image: { url: botImage1 }, caption: `Yo my nigga, I am ${botName}.\n\n🧩 Uptime: *${uptime()}*\n\n⚙ Mode: *${botWorkMode}*\n\nType *${prefix}help* to see the list of my commands.`},
+        { quoted: m }
+      );
+      /*
       return m.reply(
         `Bot is active, type *${prefix}help* to see the list of commands.`
       );
+      */
     }
     if (body.startsWith(prefix) && !icmd) {
       await doReact("❌");
@@ -299,16 +313,8 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
 
     // ------------------------------------------------------------------------------------------------------- //
 
-    const pad = (s) => (s < 10 ? "0" : "") + s;
-    const formatTime = (seconds) => {
-      const hours = Math.floor(seconds / (60 * 60));
-      const minutes = Math.floor((seconds % (60 * 60)) / 60);
-      const secs = Math.floor(seconds % 60);
-      return (time = `${pad(hours)}:${pad(minutes)}:${pad(secs)}`);
-    };
-    const uptime = () => formatTime(process.uptime());
 
-    let upTxt = `〘  ${botName} Personal Edition  〙    ⚡ Uptime: ${uptime()}`;
+    let upTxt = `〘${botName} Personal Edition〙\nUptime: ${uptime()}\nMode: ${botWorkMode}`;
     Atlas.setStatus(upTxt);
 
     cmd.start(Atlas, m, {
