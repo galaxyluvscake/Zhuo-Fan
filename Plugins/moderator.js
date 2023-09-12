@@ -18,6 +18,7 @@ const {
 } = require("../System/MongoDB/MongoDb_Core");
 
 const { userData } = require("../System/MongoDB/MongoDB_Schema.js");
+const pad = (s) => (s < 10 ? "0" : "") + s;
 const formatTime = (seconds) => {
   const hours = Math.floor(seconds / (60 * 60));
   const minutes = Math.floor((seconds % (60 * 60)) / 60);
