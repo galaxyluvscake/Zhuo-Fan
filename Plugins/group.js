@@ -225,7 +225,7 @@ module.exports = {
             {
               text: `@${
                 mentionedUser.split("@")[0]
-              } Senpai is not an *Admin* of this group!`,
+              } This nigga is not an *Admin* of this group!`,
               mentions: [mentionedUser],
             },
             { quoted: m }
@@ -240,7 +240,7 @@ module.exports = {
                 {
                   text: `Sorry @${
                     mentionedUser.split("@")[0]
-                  } Senpai, you have been *Demoted* by @${
+                  } My nigga, you have been *Demoted* by @${
                     messageSender.split("@")[0]
                   } !`,
                   mentions: [mentionedUser, messageSender],
@@ -372,10 +372,12 @@ module.exports = {
 
       case "hidetag":
       case "htag":
+        /*
         if (!isAdmin) {
           await doReact("❌");
           return m.reply(`*You* must be *Admin* in order to use this Command!`);
         }
+        */
         if (!isMedia) {
           message2 = m.quoted
             ? m.quoted.msg
@@ -403,14 +405,14 @@ module.exports = {
         await doReact("👋");
         await Atlas.sendMessage(m.from, {
           image: { url: "https://wallpapercave.com/wp/wp9667218.png" },
-          caption: `I'm Leaving this group on request... \n\nTake care everyone :)`,
+          caption: `Tchai moi j'ai pull up hein, *_vous tous vos mères !_* 🖕 🖕 🖕`,
           mentions: participants.map((a) => a.id),
           quoted: m,
         }).then(async () => {
           Atlas.groupLeave(m.from).catch((e) => {
             Atlas.sendMessage(
               m.from,
-              { text: `An error Occurd !` },
+              { text: `An error Occured !` },
               { quoted: m }
             );
           });
