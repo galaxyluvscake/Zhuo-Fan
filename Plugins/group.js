@@ -667,12 +667,6 @@ module.exports = {
           return m.reply(`*Bot* must be *Admin* in order to use this Command!`);
         }
 
-        if (m.from == "120363040838753957@g.us") {
-          await doReact("❌");
-          return m.reply(
-            "Sorry, this command is not allowed in *Atlas Support Group* !\n\nYou are not allowed to change support group link !"
-          );
-        }
         await doReact("💫");
 
         await Atlas.groupRevokeInvite(m.from).then((res) =>
@@ -686,14 +680,7 @@ module.exports = {
         break;
 
       case "tagall":
-        if (!isAdmin) {
-          await doReact("❌");
-          return m.reply(`*You* must be *Admin* in order to use this Command!`);
-        }
-        if (!isBotAdmin) {
-          await doReact("❌");
-          return m.reply(`*Bot* must be *Admin* in order to use this Command!`);
-        }
+
         if (!isMedia) {
           var message2 = m.quoted
             ? m.quoted.msg
@@ -725,10 +712,6 @@ module.exports = {
         break;
 
       case "chatbotgc":
-        if (!isAdmin) {
-          await doReact("❌");
-          return m.reply(`*You* must be *Admin* in order to use this Command!`);
-        }
 
         if (!text) {
           await doReact("❔");
@@ -765,10 +748,7 @@ module.exports = {
         break;
 
       case "antilink":
-        if (!isAdmin) {
-          await doReact("❌");
-          return m.reply(`*You* must be *Admin* in order to use this Command!`);
-        }
+
         if (!isBotAdmin) {
           await doReact("❌");
           return m.reply(`*Bot* must be *Admin* in order to use this Command!`);
@@ -809,14 +789,6 @@ module.exports = {
         break;
 
       case "welcome":
-        if (!isAdmin) {
-          await doReact("❌");
-          return m.reply(`*You* must be *Admin* in order to use this Command!`);
-        }
-        if (!isBotAdmin) {
-          await doReact("❌");
-          return m.reply(`*Bot* must be *Admin* in order to use this Command!`);
-        }
 
         if (!text) {
           await doReact("❔");
