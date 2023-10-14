@@ -313,3 +313,14 @@ global.charID21 = {
   botImage5 : "https://graph.org/file/362aa85841a9fdbea7ccd.jpg",
   botImage6 : "https://graph.org/file/3d44b3619041610a0d576.jpg",
 }
+
+global.charID22 = {
+  botName : "Jin Woo",
+  botVideo : "https://graph.org/file/1d081b1db53b60cd7af8b.mp4",
+  botImage1 : "https://telegra.ph/file/862b37ec79c82b3452417.jpg",
+  botImage2 : "https://telegra.ph/file/4ebfa9ee6a587ff26b414.jpg",
+  botImage3 : "https://telegra.ph/file/e58c6a8922d708371e1e1.jpg",
+  botImage4 : "https://telegra.ph/file/23cd4c029206e50504dac.jpg",
+  botImage5 : "https://telegra.ph/file/ae9ddc09cda26c91a77b7.jpg",
+  botImage6 : "https://telegra.ph/file/17594407deecf8d0f6d04.jpg",
+}
