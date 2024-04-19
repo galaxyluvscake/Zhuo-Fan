@@ -26,7 +26,7 @@ const formatTime = (seconds) => {
   return (time = `${pad(hours)}:${pad(minutes)}:${pad(secs)}`);
 };
 const uptime = () => formatTime(process.uptime());
-var botWorkMode = await getBotMode();
+var botWorkMode = getBotMode();
 
 let mergedCommands = [
   "addmod",
