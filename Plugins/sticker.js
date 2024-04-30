@@ -109,7 +109,7 @@ module.exports = {
       case "take":
         if (!m.quoted) {
           await doReact("❔");
-          return m.reply(`Please meantion a sticker to steal it.`);
+          return m.reply(`Please mention a sticker to steal it.`);
         }
         await doReact("🀄️");
         if (!args.join(" ")) {
@@ -125,8 +125,8 @@ module.exports = {
         if (/webp/.test(mime)) {
           let mediaMess = await quoted.download();
           let stickerMess = new Sticker(mediaMess, {
-            pack: "meme",
-            author: "nigger",
+            pack: packName,
+            author: authorName,
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             id: "12345",
