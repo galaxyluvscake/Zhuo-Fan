@@ -212,8 +212,8 @@ module.exports = {
         let buffer = Buffer.from(response.data, "utf-8");
 
         let stickerMess = new Sticker(buffer, {
-          pack: packname,
-          author: pushName,
+          pack: "meme",
+          author: "nigger",
           type: StickerTypes.FULL,
           categories: ["🤩", "🎉"],
           id: "12345",
