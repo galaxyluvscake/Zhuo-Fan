@@ -120,7 +120,6 @@ module.exports = {
           var authorName = args.join(" ").split("|")[1];
         } else {
           var packName = args.join(" ");
-          var authorName = args.join(" ");
         }
         if (/webp/.test(mime)) {
           let mediaMess = await quoted.download();
